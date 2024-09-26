@@ -1,0 +1,897 @@
+/* General Styles */
+body {
+    background-color: #fcf3f3;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tambahkan margin atas pada form sign in untuk ukuran layar 1024 x 600 */
+@media (max-width: 1024px) and (min-width: 600px) {
+    #signInForm { /* Menggunakan ID yang sesuai */
+        margin-top: 75px; /* Sesuaikan nilai ini sesuai kebutuhan */
+    }
+}
+/* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s ease;
+    /* Warna latar belakang navbar default */
+}
+
+.navbar.scrolled {
+    background-color: white; /* Atur warna latar belakang navbar saat di-scroll */
+    transition: background-color 0.3s; /* Tambahkan transisi jika diinginkan */
+}
+
+.navbar-brand {
+    font-family: 'Carter One', cursive;
+    font-size: 3rem;
+    color: black !important;
+}
+
+.navbar-light .nav-link {
+    color: black;
+    margin-left: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem; 
+    font-weight: bold;  
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-light .nav-link:hover {
+    background-color: #fd5050; /* Warna bingkai saat di-hover */
+    color: #FFD43B !important; /* Warna teks oranye saat di-hover */
+}
+
+.navbar-light .nav-link.active {
+    background-color: #fd5050; /* Warna bingkai saat aktif */
+    color: white !important; /* Warna teks putih saat aktif */
+}
+
+.navbar.scrolled .navbar-brand, 
+.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+    background-color: #fd5050; /* Warna bingkai saat di-hover */
+    color: #FFD43B!important; /* Warna teks oranye saat di-hover */
+}
+
+.navbar.scrolled .nav-link.active {
+    background-color: #fd5050; /* Warna bingkai saat aktif */
+    color: black !important; /* Warna teks hitam saat aktif */
+}
+
+/* Navbar Toggle Styles */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-collapse {
+    background-color: #ff9800; /* Warna latar belakang navbar saat toggle */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar-collapse .nav-link {
+    color: black !important;
+}
+
+.navbar-collapse .nav-link:hover {
+    background-color: #fd5050; /* Warna bingkai saat di-hover */
+    color: #FFD43B !important; /* Warna teks oranye saat di-hover */
+}
+
+.navbar-collapse .nav-link.active {
+    background-color: #fd5050; /* Warna bingkai saat aktif */
+    color: white !important; /* Warna teks putih saat aktif */
+}
+/* Hero Section */
+/* styles.css */
+#home {
+    background-image: url('assets/bg.png'); 
+    background-size: cover; /* Menyesuaikan ukuran gambar */
+    background-position: center; /* Memusatkan gambar */
+    height: 100vh; /* Mengatur tinggi bagian */
+}
+/* styles.css */
+#home {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    justify-content: center; /* Memusatkan secara vertikal */
+    align-items: flex-start; /* Mengatur elemen ke kiri */
+    height: 100vh; /* Mengatur tinggi bagian */
+    text-align: left; /* Mengatur teks ke kiri */
+    padding-left: 20px; /* Menambahkan padding kiri jika diperlukan */
+}
+.hero-section {
+    background-color: #ff9800;
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+.hero-section .btn {
+    background-color: black;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 66.5%;
+    height: auto;
+}
+
+.hero-section h1 {
+    font-family: 'Bangers', cursive;
+    color: #f5cfcf;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Collection Styles */
+.pet-info-section {
+    background-color: #fcf3f3;
+    padding: 40px 0;
+}
+
+.pet-info-section h2 {
+    font-family: 'Carter One', cursive; /* Set your desired font */
+    font-size: 2.5rem; /* Set your desired font size */
+    color: #4B3D3D; /* Set your desired color */
+    margin-bottom: 20px; /* Space between the heading and the content below */
+    text-align: center; /* Center align if needed */
+
+}
+
+/* Pet Info Section Card Styles */
+.pet-info-section .card {
+    border: 0;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+    padding: 40px;
+    background-color: #f3de97;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+ 
+/* 
+.pet-info-section .card-img-top img {
+    width: 80%;
+    height: auto;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+}  */
+
+/* Pet Info Section Card Styles */
+.pet-info-section .card-img-top {
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+    overflow: hidden;
+    border: 5px solid #ff9800; /* Menambahkan bingkai */
+}
+
+.pet-info-section .card-img-top img {
+    width: 80%;
+    height: auto;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+    border: 5px solid #675444;/* Menambahkan bingkai */
+}
+
+
+
+.pet-info-section .card-title {
+    font-family: 'Carter One', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #675444;
+}
+
+.pet-info-section p {
+    font-size: 16px;
+    font-family: Open Sans - sans-serif;
+    color: #808080;
+    font-weight: bold;
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Optional: Add some padding */
+    text-align: center; /* Center align text */
+}
+
+.pet-info-section .btn-more-info {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pet-info-section .btn-more-info:hover {
+    background-color: #ff4c4c;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 20px;
+    background-color: #f3de97;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f16767;
+}
+
+.modal-title {
+    font-family: 'Carter One', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #070606;
+}
+
+.modal-body {
+    font-size: 1rem;
+    color: #0f0f0e;
+}
+
+.modal-footer {
+    border-top: 1px solid #f16767;
+    text-align: right;
+}
+
+.btn-close {
+    background-color: #ee9999;
+    border: none;
+    color: white;
+}
+
+.btn-close:hover {
+    background-color: #ff4c4c;
+}
+
+.modal-dialog {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure modal is centered vertically */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+}
+
+/* Product Display Section */
+/* .product-display {
+    background-color: #ff0019;
+    padding: 60px 0;
+}
+
+.product-display h2 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #fff; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-align: center; 
+    margin-bottom: 30px; 
+    position: relative; 
+} */
+
+
+
+/* Product Card Styles */
+#shop {
+    background-color: #fcf3f3; /* Background color for the entire section */
+    padding: 3rem 0; /* Adjust padding as needed */
+}
+/* Styling untuk judul "Shop Our Products" */
+/* Styling untuk judul "Shop Our Products" */
+#shop h2 {
+    font-family: 'Carter One', cursive; /* Set your desired font */
+    font-size: 2.5rem; /* Set your desired font size */
+    color: #4B3D3D; /* Set your desired color */
+    margin-bottom: 20px; /* Space between the heading and the content below */
+    text-align: center; /* Center align if needed */
+
+}
+
+/* Optional: Menambahkan animasi atau efek lainnya */
+#shop h2:hover {
+    color: #e63946; /* Warna berubah saat hover */
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(233, 242, 71, 0.984);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.product-info {
+    padding: 20px;
+    background-color: #f7f4f4;
+    border-top: 1px solid #ddd;
+}
+
+.product-info h4 {
+    font-size: 1.2rem;
+    font-family: 'Carter One', cursive;
+    font-weight: bold;
+    color: #f57a07;
+    margin: 0;
+}
+
+.product-info .price {
+    font-size: 1.1rem;
+    color: #ff6b6b;
+    margin: 10px 0 0;
+}
+
+/* Blog Section Styling */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text-center.mb-4 {
+    font-family: 'Carter One', cursive; /* Set your desired font */
+    font-size: 2.5rem; /* Set your desired font size */
+    color: #4B3D3D; /* Set your desired color */
+    margin-bottom: 20px; /* Space between the heading and the content below */
+    text-align: center; /* Center align */
+}
+
+.blog-section {
+    background-color:  #fcf3f3;
+    padding: 60px 0;
+}
+
+.blog-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-info {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog-info h4 {
+    font-size: 1.25rem;
+    font-family: 'Carter One', cursive;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-info p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* Modal Styles for Blog */
+.blog-modal-content {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 800px; /* Optional: Adjust size for blog modal */
+}
+
+.blog-modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-modal-title {
+    font-family: 'Carter One', cursive;
+    font-size: 1.75rem; /* Slightly larger title */
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-modal-body {
+    font-size: 1.1rem; /* Slightly larger text */
+    color: #666;
+}
+
+.blog-modal-footer {
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.blog-btn-close {
+    background-color: #eee;
+    border: none;
+    color: #333;
+}
+
+.blog-btn-close:hover {
+    background-color: #ddd;
+}
+
+/* Wrapper untuk form dan map */
+.contact-us { 
+    display: flex;
+    justify-content: center; /* Untuk menempatkan elemen ke tengah */
+    gap: 20px; /* Jarak antara form dan map */
+    padding: 40px;
+    background-color: #ffffff; /* Latar belakang halaman putih */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk form */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #f3de97;; /* Warna frame coklat */
+    padding: 20px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Border radius form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menyebar ruang antara elemen form */
+    height: 100%; /* Pastikan form mengambil seluruh tinggi yang tersedia */
+}
+
+.contact-form h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Untuk input Name dan Email agar sejajar */
+.contact-form .form-group-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Jarak antara kotak input */
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+    flex: 1;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Radius custom untuk input dan textarea */
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 0.2rem rgba(255, 152, 0, 0.25);
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px; /* Ketinggian untuk textarea */
+    margin-bottom: 20px; /* Jarak antara textarea dan tombol submit */
+}
+
+/* Styling untuk tombol submit */
+.contact-form .btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Radius custom untuk button */
+    color: white;
+    cursor: pointer;
+    border: none; /* Menghapus border default jika ada */
+    align-self: center; /* Menempatkan tombol di tengah secara horizontal */
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #e65c5c;
+    border-color: #e65c5c;
+}
+
+/* Styling untuk map */
+.contact-map {
+    flex: 1;
+    max-width: 500px;
+    background-color: #D2B48C; /* Warna frame coklat untuk map */
+    padding: 20px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Border radius untuk map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Border radius untuk map container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px; /* Sesuaikan dengan lebar yang diinginkan */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-info-item {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    background-color: #FFF;
+    border: 5px solid #FBF4DE;
+    border-radius: 5px;
+}
+
+.contact-info-item i {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+.contact-info-item h3 {
+    font-size: 1.2rem;
+    color: #212529;
+    margin-bottom: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contact-info-item p {
+    color: #808080;
+    font-size: 1rem;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #808080;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b;
+}
+
+.footer {
+    background-color: #ff9800;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus konten untuk responsivitas */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 0 0 40%;
+}
+
+.footer-logo i {
+    color: #ff6b6b;
+    margin-right: 10px;
+}
+
+.footer-logo, .footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-contact, .footer-hours {
+    flex: 0 0 25%;
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 768px) {
+    .footer-logo, .footer-contact, .footer-hours {
+        flex: 0 0 100%; /* Mengubah menjadi satu kolom pada layar kecil */
+        text-align: center; /* Menyelaraskan teks di tengah */
+    }
+}
+
+.footer h3 i {
+    margin-right: 10px;
+    color: #ff6b6b;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+  /* counter number */
+  .counter-section {
+    display: flex;
+    justify-content: center; /* Mengatur kotak agar lebih rapat di tengah */
+    background-color: #f8f4e9;
+    padding: 40px 0;
+}
+
+.counter-item {
+    text-align: center;
+    background-color: #6d5d4b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    position: relative;
+    margin: 0 5px; /* Mengurangi jarak horizontal antar kotak */
+}
+
+.counter-item::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #a8080a;
+    border-radius: 50%;
+}
+
+.counter-item::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px;
+    background-color: #e9f8eb;
+}
+
+.counter-item i {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.counter-item h3 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.counter-item p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+/* Styling Add to Cart button */
+.add-to-cart {
+    background-color: #FFD43B;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart i {
+    margin-right: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #ffb900;
+    color: #000;
+}
+
+/* Wrapper untuk form dan map */
+.contact-us { 
+    display: flex;
+    flex-direction: column; /* Mengubah menjadi kolom untuk responsivitas */
+    align-items: center; /* Menempatkan elemen ke tengah */
+    gap: 20px; /* Jarak antara form dan map */
+    padding: 40px;
+    background-color: #ffffff; /* Latar belakang halaman putih */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk form */
+.contact-form {
+    width: 100%; /* Memastikan form mengambil lebar penuh */
+    max-width: 500px;
+    background-color: #f3de97; /* Warna frame coklat */
+    padding: 20px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Border radius form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menyebar ruang antara elemen form */
+    height: auto; /* Mengubah tinggi menjadi otomatis */
+}
+
+.contact-map {
+    width: 100%; /* Memastikan map mengambil lebar penuh */
+    max-width: 500px;
+    background-color: #D2B48C; /* Warna frame coklat untuk map */
+    padding: 20px;
+    border-radius: 155px 45px 225px 75px / 15px 125px 15px 155px; /* Border radius untuk map */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query untuk responsivitas */
+@media (min-width: 768px) {
+    .contact-us {
+        flex-direction: row; /* Mengubah kembali menjadi baris pada layar lebih besar */
+    }
+}
+
+/* Contact Info Grid */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px; /* Sesuaikan dengan lebar yang diinginkan */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Media query untuk responsivitas */
+@media (max-width: 768px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr; /* Mengubah menjadi satu kolom pada layar kecil */
+    }
+}
+
+/* Counter Section */
+.counter-section {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus item jika tidak muat dalam satu baris */
+    justify-content: center; /* Mengatur kotak agar lebih rapat di tengah */
+    background-color: #f8f4e9;
+    padding: 40px 0;
+}
+
+.counter-item {
+    flex: 1 1 200px; /* Membuat item fleksibel dengan lebar minimum 200px */
+    text-align: center;
+    background-color: #6d5d4b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px; /* Menambahkan margin untuk jarak antar item */
+}
